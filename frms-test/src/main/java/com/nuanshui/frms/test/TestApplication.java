@@ -41,7 +41,7 @@ import java.util.List;
         "com.nuanshui.frms.test.appservice", "com.nuanshui.frms.test.csservice",
         "com.nuanshui.frms.test.asyncService"
         })
-@MapperScan({"com.nuanshui.frms.job.mapper","com.nuanshui.frms.test.csmapper",
+@MapperScan({"com.nuanshui.frms.test.mapper","com.nuanshui.frms.test.csmapper",
         "com.nuanshui.frms.test.appmapper",
         })
 @EnableJpaAuditing

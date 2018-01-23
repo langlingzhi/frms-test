@@ -1,6 +1,6 @@
 package com.nuanshui.frms.test.controller;
 
-import com.nuanshui.frms.test.JobApplication;
+import com.nuanshui.frms.test.TestApplication;
 import com.nuanshui.frms.test.controller.example.ExampleController;
 import com.nuanshui.frms.test.entity.Example;
 import lombok.extern.slf4j.Slf4j;
@@ -14,7 +14,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 @Slf4j
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest
-@Import(JobApplication.class)
+@Import(TestApplication.class)
 public class ExampleControllerTest {
 
     @Autowired
