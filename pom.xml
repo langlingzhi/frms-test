@@ -22,7 +22,7 @@
         <org.apache.shiro-version>1.2.4</org.apache.shiro-version>
     </properties>
 
-    <repositories>
+<!--     <repositories>
         <repository>
             <id>releases</id>
             <name>maven-releases</name>
@@ -42,7 +42,7 @@
             <id>thirdparty</id>
             <name>thirdparty</name>
             <url>http://120.27.228.158:8082/repository/thirdparty/</url>
-        </repository>
+        </repository> -->
         <repository>
             <id>spring-releases</id>
             <name>Spring Releases</name>
@@ -54,7 +54,7 @@
     </repositories>
 
     <distributionManagement>
-        <repository>
+<!--         <repository>
             <id>releases</id>
             <name>maven-releases</name>
             <url>http://120.27.228.158:8082/repository/maven-releases/</url>
@@ -63,7 +63,7 @@
             <id>snapshots</id>
             <name>maven-snapshots</name>
             <url>http://120.27.228.158:8082/repository/maven-snapshots/</url>
-        </snapshotRepository>
+        </snapshotRepository> -->
     </distributionManagement>
 
     <dependencyManagement>
