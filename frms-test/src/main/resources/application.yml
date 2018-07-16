@@ -1,0 +1,15 @@
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+    lease:
+      duration: 5
+  instance:
+    lease-renewal-interval-in-seconds: 1
+    lease-expiration-duration-in-seconds: 2
+logging:
+  level:
+    root: info
+    com.nuanshui: debug
+    org.apache: info
+    org.hibernate: error

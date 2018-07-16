@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.nuanshui.frms.test.csmapper.FrmsapiMapper" >
+    <insert id="getfrmsapi" parameterType="com.nuanshui.frms.test.entity.cs.Frmsapi" >
+        insert into frmsapi (description,method,url,param,verify,status) values(#{description},#{method},#{url},#{param},#{verify},#{status});
+    </insert>
+    <select id="queryfrmsapi"  resultType="com.nuanshui.frms.test.entity.cs.Frmsapi">
+        select * from frmsapi;
+    </select>
+    <delete id="loadfrmsapi" parameterType="Long" >
+        delete from frmsapi where id=#{id};
+    </delete>
+</mapper>
