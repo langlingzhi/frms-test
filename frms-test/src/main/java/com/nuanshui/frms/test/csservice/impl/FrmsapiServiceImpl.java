@@ -24,6 +24,7 @@ public class FrmsapiServiceImpl implements FrmsapiService {
 
     @Override
     public List<Frmsapi> queryfrmsapi( ) {
+
         return frmsapiMapper.queryfrmsapi();
     }
 

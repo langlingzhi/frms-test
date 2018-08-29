@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.nuanshui.frms.test.csmapper.UserMapper" >
+    <insert id="getUser" parameterType="com.nuanshui.frms.test.entity.cs.User" >
+        insert into user (username,password,loginIdentification) values(#{username},#{password},#{loginIdentification});
+    </insert>
+    <select id="queryUserLogin"  resultType="com.nuanshui.frms.test.entity.cs.User" parameterType="String">
+        select * from user where username=#{username};
+    </select>
+    <delete id="loadUser" parameterType="String" >
+        delete from user where username=#{username};
+    </delete>
+</mapper>
