@@ -6,4 +6,5 @@ import java.util.List;
 
 public interface MessageListMapper {
     Long getMessageList(MessageList messagelist);
+    Long deleteMessageList(String orderno);
 }

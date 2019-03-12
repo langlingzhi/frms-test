@@ -62,8 +62,8 @@ public class DataSourceAop {
      */
     @Before("    execution(* com.nuanshui.frms.test.csservice..*.find*(..))" +
             " or execution(* com.nuanshui.frms.test.csservice..*.get*(..))" +
-            " or execution(* com.nuanshui.frms.test.csservice..*.search*(..))" +
-            " or execution(* com.nuanshui.frms.test.csservice..*.select*(..))" +
+            " or execution(* com.nuanshui.frms.test.csservice..*.add*(..))" +
+            " or execution(* com.nuanshui.frms.test.csservice..*.delete*(..))" +
             " or execution(* com.nuanshui.frms.test.csservice..*.query*(..))" +
             " or execution(* com.nuanshui.frms.test.csservice..*.load*(..))" +
             "" )

@@ -11,6 +11,7 @@ import com.nuanshui.frms.test.entity.cs.RepaymentOrder;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import sun.rmi.runtime.Log;
 
 import java.util.List;
 
@@ -31,5 +32,21 @@ public class MessageListServiceImpl implements MessageListService {
         payOrder.setOrderNo("1234");
         payOrderService.selectByUserIdForUnclearedOrder(payOrder);
         return messageListMapper.getMessageList(messagelist);
+    }
+
+    @Override
+    public Long addMessageList(MessageList messagelist) {
+
+
+        return  messageListMapper.getMessageList(messagelist);
+
+
+    }
+
+    @Override
+    public Long deleteMessageList(String orderno) {
+
+        return   messageListMapper.deleteMessageList(orderno);
+
     }
 }

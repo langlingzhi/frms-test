@@ -4,4 +4,8 @@
     <insert id="getMessageList" parameterType="com.nuanshui.frms.test.entity.cs.MessageList" >
         insert into message_list (message_order_no,order_no,loan_person,telphone,dispatch_user,message_content,message_source) values(#{message_order_no},#{order_no},#{loan_person},#{telphone},#{dispatch_user},#{message_content},#{message_source});
     </insert>
+    <delete id="deleteMessageList" parameterType="String" >
+        delete from message_list WHERE order_no=#{orderno}
+    </delete>
+
 </mapper>
